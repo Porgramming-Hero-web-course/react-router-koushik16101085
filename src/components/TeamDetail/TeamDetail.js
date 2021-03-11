@@ -40,7 +40,7 @@ const TeamDetail = () => {
         fetch(url)
             .then(res => res.json())
             .then(data => setTeams(data.teams[0]))
-    }, [])
+    }, [idTeam])
 
     let gender = strGender && strGender.toLowerCase();
 
