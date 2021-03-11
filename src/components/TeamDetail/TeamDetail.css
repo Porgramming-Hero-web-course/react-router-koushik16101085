@@ -1,0 +1,41 @@
+.teamDetail{
+    background-color: #282c34;
+    color: white;
+}
+.container{
+    background-color: blue;
+    height: 230px;
+    width: 100%;
+    border-radius: 30px;
+}
+
+.teamImage{
+    margin-top: 20px;
+    text-align: justify;
+    position: absolute;
+    margin-left: 800px;
+    
+}
+.teamDetailText{
+    text-align: left;
+    color: white;
+    margin-top:30px;
+}
+.teamDescriptionStyle{
+    text-align:center;
+    width: 50%;
+    margin-left: 350px;
+    display: inline;
+
+}
+.banner{
+         width: 80px;
+}
+.logoStyle{
+    width: 20px;
+}
+.socialLogoStyle{
+    padding: 10px;
+    margin: 5px;
+    
+}
