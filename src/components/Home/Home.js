@@ -17,18 +17,17 @@ const Home = () => {
 
 
     return (
-        
-        
-        <div className='home-background'>
+
+
+        <div className='main-background'>
             <div className="background-image">
-        {/* <img style={{width:"100%"}}src={bannerImage} alt=""/> */}
-        <h1>English Premier League Club</h1>
-        
-       </div> 
-             {
-                teams.map(team => <Team team={team}></Team>)
-            }  
+                <h1 style={{ textAlign: 'center', Color: "white" }}>English Premier League Club</h1>
+
             </div>
+            {
+                teams.map(team => <Team team={team}></Team>)
+            }
+        </div>
     );
 };
 

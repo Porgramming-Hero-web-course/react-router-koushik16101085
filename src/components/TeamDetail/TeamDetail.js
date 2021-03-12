@@ -9,13 +9,13 @@ import maleImage from "../../Photo/male.png";
 import TwitterLogo from '../../Icon/Twitter.png';
 import FacebookLogo from '../../Icon/Facebook.png';
 import YoutubeLogo from '../../Icon/YouTube.png';
+//import StadiumImage from '../../Photo/Stadium.jpg'
 //import bannerImage from "../../Photo/159000955_289758125901032_3727333242678077915_n.jpg"
 import './TeamDetail.css'
 import FoundedLogo from "../../Icon/found 1.png";
 import SportTypeLogo from "../../Icon/football (1) 1.png";
 import FlagLogo from "../../Icon/flag (1) 1.png";
 import GenderLogo from "../../Icon/male-gender-sign 1.png";
-//import TeamDetailFooter from '../TeamDetailFotter/TeamDetailFooter';
 
 
 const TeamDetail = () => {
@@ -48,7 +48,7 @@ const TeamDetail = () => {
         <div className="teamDetail">
 
             <div className=" position-relative bannerStyle">
-                <div className="background-image">
+                <div className="StadiumBackground-image">
                     <h1><img className="position-absolute top-0 start-0" className="strTeamBadge" style={{ width: "300px" }}
                         src={teams.strTeamBadge} alt="" />
                     </h1>
@@ -81,16 +81,15 @@ const TeamDetail = () => {
 
             <div className="teamDescriptionStyle">
                 <h1>Team Description</h1>
-                <p>{strDescriptionEN}</p>
-
+                <p>{strDescriptionEN}</p> 
                 <br />
                 <h1>Stadium Description</h1>
                 <p>{strStadiumDescription}</p>
             </div>
             <div className="socialLogoStyle mt-5">
-                <a href={strTwitter}><FontAwesomeIcon style={{ width: '50px', height: '50px' }} icon={faTwitterSquare} className="mx-3" alt="" /></a>
-                <a href={strFacebook}><FontAwesomeIcon style={{ width: '50px', height: '50px' }} icon={faFacebook} className="mx-3" alt="" /></a>
-                <a href={strYoutube}><FontAwesomeIcon style={{ width: '50px', height: '50px' }} icon={faYoutubeSquare} classNAme="mx-3" alt="" /></a>
+                <a href={"https://"+teams.strTwitter} target="blank"><FontAwesomeIcon style={{ width: '50px', height: '50px' }}   icon={faTwitterSquare} className="mx-3" alt="" /></a>
+                <a href={"https://"+teams.strFacebook} target="blank"><FontAwesomeIcon style={{ width: '50px', height: '50px' }}  icon={faFacebook} className="mx-3" alt="" /></a>
+                <a href={"https://"+teams.strYoutube} target = "blank"><FontAwesomeIcon style={{ width: '50px', height: '50px' }}  icon={faYoutubeSquare} classNAme="mx-3" alt="" /></a>
             </div>
         </div>
 

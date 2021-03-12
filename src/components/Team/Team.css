@@ -4,33 +4,19 @@
     height: 350px;
     width: 350px;
     margin: 20px;
-    /* height: 350px;
-    width: 350px;
-    background-color:white;
-    color:black;
-    border: 1px solid gainsboro;
-    margin: 20px;
-    padding: 20px; */
-    /* border: 1px solid red;
-    color: black;
-    padding: 200px;
-    width: 18rem;
-    height: 17rem;;
-    border-radius:25px;
-    background-color: white;
-    margin-bottom: 25px;
-    margin-left: 400px; */
-    /* background-color: #282c34;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white; */
-
+    
+    
 }
 .teamStyle img{
     height:150px;
     width: 150px;
 }
+.background-image{
+    background-image: url(../../Photo/banner.jpg);
+    height: 300px;
+  }
+
+  .background-image h1{
+    color: white;
+     
+  }

@@ -9,7 +9,6 @@ import Home from "./components/Home/Home";
 import NoMatch from "./components/NoMatch/NoMatch";
 import Team from './components/Team/Team';
 import TeamDetail from "./components/TeamDetail/TeamDetail";
-import bannerImage from "../src/Photo/banner.jpg"
 
 function App() {
   

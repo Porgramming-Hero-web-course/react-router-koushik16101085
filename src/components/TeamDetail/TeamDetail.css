@@ -4,7 +4,7 @@
 }
 .container{
     background-color: blue;
-    height: 230px;
+    height: 250px;
     width: 100%;
     border-radius: 30px;
 }
@@ -24,7 +24,7 @@
 .teamDescriptionStyle{
     text-align:center;
     width: 50%;
-    margin-left: 350px;
+    
     display: inline;
 
 }
@@ -39,3 +39,8 @@
     margin: 5px;
     
 }
+.StadiumBackground-image{
+    background-image: url(../../Photo/Stadium.jpg);
+    height: 300px;
+    width: 100%;
+  }
