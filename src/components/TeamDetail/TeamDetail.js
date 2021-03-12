@@ -3,14 +3,8 @@ import { useParams } from 'react-router';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitterSquare, faYoutubeSquare } from '@fortawesome/free-brands-svg-icons';
 import { faFacebook } from '@fortawesome/free-brands-svg-icons';
-//import { } from '@fontawesome/free-solid-svg-icons';
 import femaleImage from "../../Photo/female.png";
 import maleImage from "../../Photo/male.png";
-import TwitterLogo from '../../Icon/Twitter.png';
-import FacebookLogo from '../../Icon/Facebook.png';
-import YoutubeLogo from '../../Icon/YouTube.png';
-//import StadiumImage from '../../Photo/Stadium.jpg'
-//import bannerImage from "../../Photo/159000955_289758125901032_3727333242678077915_n.jpg"
 import './TeamDetail.css'
 import FoundedLogo from "../../Icon/found 1.png";
 import SportTypeLogo from "../../Icon/football (1) 1.png";
@@ -22,19 +16,10 @@ const TeamDetail = () => {
     const { idTeam } = useParams();
     const [teams, setTeams] = useState([]);
     const {
-        strTeam,
-        intFormedYear,
-        strCountry,
-        strSport,
         strGender,
         strDescriptionEN,
         strStadiumDescription,
-        strTwitter,
-        strFacebook,
-        strYoutube
-
-
-    } = teams;
+        } = teams;
     useEffect(() => {
         const url = `https://www.thesportsdb.com/api/v1/json/1/lookupteam.php?id=${idTeam}`;
         fetch(url)
@@ -55,13 +40,13 @@ const TeamDetail = () => {
                 </div>
             </div>
             <div className="container">
-                <div className="row d-flex flex-row bd-highlight mb-3 teamDetailText">
-                    <div className="col-md-9">
+                <div className="d-flex justify-content-around mx-5 mb-3 teamDetailHistory">
+                    <div className="col-md-9 mt-4">
                         <h1>{teams.strTeam}</h1>
-                        <h3> <img className="logoStyle" src={FoundedLogo} alt="" />  Founded:{teams.intFormedYear}</h3>
-                        <h3> <img className="logoStyle" src={FlagLogo} alt="" /> Country:{teams.strCountry}</h3>
-                        <h3> <img className="logoStyle" src={SportTypeLogo} alt="" /> Sport Type: Football</h3>
-                        <h3><img className="logoStyle" src={GenderLogo} alt="" /> Gender:{teams.strGender}</h3>
+                        <h5> <img className="logoStyle" src={FoundedLogo} alt="" />  Founded:{teams.intFormedYear}</h5>
+                        <h5> <img className="logoStyle" src={FlagLogo} alt="" /> Country:{teams.strCountry}</h5>
+                        <h5> <img className="logoStyle" src={SportTypeLogo} alt="" /> Sport Type: Football</h5>
+                        <h5><img className="logoStyle" src={GenderLogo} alt="" /> Gender:{teams.strGender}</h5>
                     </div>
                     <div className="col-md-3 teamImage">
                         {
@@ -79,17 +64,17 @@ const TeamDetail = () => {
                 </div>
             </div>
 
-            <div className="teamDescriptionStyle">
-                <h1>Team Description</h1>
-                <p>{strDescriptionEN}</p> 
+            <div className="teamDescriptionStyle mx-5">
+                <h1 style={{ color: 'navy' }}>English Premier League Team Description</h1>
+                <p style={{ textAlign: 'left' }} className="mx-5">{strDescriptionEN}</p>
                 <br />
-                <h1>Stadium Description</h1>
-                <p>{strStadiumDescription}</p>
+                <h1 style={{ color: 'navy' }}>English Premier League Stadium Description</h1>
+                <p style={{ textAlign: 'left'}} className="mx-5">{strStadiumDescription}</p>
             </div>
             <div className="socialLogoStyle mt-5">
-                <a href={"https://"+teams.strTwitter} target="blank"><FontAwesomeIcon style={{ width: '50px', height: '50px' }}   icon={faTwitterSquare} className="mx-3" alt="" /></a>
-                <a href={"https://"+teams.strFacebook} target="blank"><FontAwesomeIcon style={{ width: '50px', height: '50px' }}  icon={faFacebook} className="mx-3" alt="" /></a>
-                <a href={"https://"+teams.strYoutube} target = "blank"><FontAwesomeIcon style={{ width: '50px', height: '50px' }}  icon={faYoutubeSquare} classNAme="mx-3" alt="" /></a>
+                <a href={"https://" + teams.strTwitter} target="blank"><FontAwesomeIcon style={{ width: '50px', height: '50px' }} icon={faTwitterSquare} className="mx-3" alt="" /></a>
+                <a href={"https://" + teams.strFacebook} target="blank"><FontAwesomeIcon style={{ width: '50px', height: '50px' }} icon={faFacebook} className="mx-3" alt="" /></a>
+                <a href={"https://" + teams.strYoutube} target="blank"><FontAwesomeIcon style={{ width: '50px', height: '50px' }} icon={faYoutubeSquare} classNAme="mx-3" alt="" /></a>
             </div>
         </div>
 

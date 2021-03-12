@@ -1,7 +1,5 @@
-
 import { useEffect, useState } from 'react';
 import Team from '../Team/Team';
-
 import './Home.css'
 
 const Home = () => {
@@ -13,12 +11,7 @@ const Home = () => {
             .then(data => setTeams(data.teams))
     }, [])
 
-
-
-
     return (
-
-
         <div className='main-background'>
             <div className="background-image">
                 <h1 style={{ textAlign: 'center', Color: "white" }}>English Premier League Club</h1>

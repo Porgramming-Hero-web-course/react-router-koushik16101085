@@ -4,19 +4,16 @@
 }
 .container{
     background-color: blue;
-    height: 250px;
+    height: 280px;
     width: 100%;
     border-radius: 30px;
 }
 
 .teamImage{
-    margin-top: 20px;
-    text-align: justify;
-    position: absolute;
-    margin-left: 800px;
-    
+    margin-top: 30px;
 }
-.teamDetailText{
+
+.teamDetailHistory{
     text-align: left;
     color: white;
     margin-top:30px;
@@ -24,12 +21,10 @@
 .teamDescriptionStyle{
     text-align:center;
     width: 50%;
-    
     display: inline;
-
 }
 .banner{
-         width: 80px;
+    width: 80px;
 }
 .logoStyle{
     width: 20px;
@@ -44,3 +39,4 @@
     height: 300px;
     width: 100%;
   }
+  
